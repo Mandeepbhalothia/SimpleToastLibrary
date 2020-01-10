@@ -40,6 +40,10 @@ public class BleManager {
     *  first method should be init
     * */
 
+    public static BleManager getInstance() {
+        return new BleManager();
+    }
+
     public void init(Application app) {
         if (context == null && app != null) {
             context = app;
